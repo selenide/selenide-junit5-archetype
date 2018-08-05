@@ -1,0 +1,9 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.selenide</groupId>
+  <artifactId>selenide-junit5-archetype</artifactId>
+  <version>0.8</version>
+  <name>Selenide JUnit5 simple example project</name>
+  <url>http://selenide.org</url>
+</project>
