@@ -3,7 +3,36 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.selenide</groupId>
   <artifactId>selenide-junit5-archetype</artifactId>
-  <version>0.8</version>
+  <version>0.8.1</version>
   <name>Selenide JUnit5 simple example project</name>
-  <url>http://selenide.org</url>
+  <description>This archetype generates a sample Selenide (http://selenide.org) project</description>
+  <url>https://github.com/vinogradoff/selenide-junit5-archetype</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Alexei Vinogradov</name>
+      <email>alexei@vinogradoff.de</email>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/vinogradoff/selenide-junit5-archetype</connection>
+    <developerConnection>scm:git:ssh://github.com:vinogradoff/selenide-junit5-archetype.git</developerConnection>
+    <url>http://github.com/vinogradoff/selenide-junit5-archetype/tree/master</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
 </project>
