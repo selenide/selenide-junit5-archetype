@@ -1,8 +1,0 @@
-<archetype>
-  <id>selenide-junit5-archetype</id>
-  <testSources>
-    <source>src/test/java/GoogleTest.java</source>
-    <source>src/test/java/pagewidgets/GoogleSearch.java</source>
-    <source>src/test/java/pagewidgets/SearchResults.java</source>
-  </testSources>
-</archetype>
