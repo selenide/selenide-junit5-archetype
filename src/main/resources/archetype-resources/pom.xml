@@ -8,7 +8,7 @@
     <dependency>
       <groupId>com.codeborne</groupId>
       <artifactId>selenide</artifactId>
-      <version>4.12.3</version>
+      <version>${selenide_version}</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -30,12 +30,16 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.0</version>
         <configuration>
-          <systemProperties>
-            <property>
-              <name>junit.jupiter.extensions.autodetection.enabled</name>
-              <value>true</value>
-            </property>
-          </systemProperties>
+          <systemPropertyVariables>
+            <junit.jupiter.extensions.autodetection.enabled>true</junit.jupiter.extensions.autodetection.enabled>
+            <selenide.browser>chrome</selenide.browser>
+            <selenide.timeout>4000</selenide.timeout>
+            <!--<selenide.baseUrl>http://localhost:8080/gui</selenide.baseUrl>-->
+            <selenide.startMaximized>false</selenide.startMaximized>
+            <selenide.fastSetValue>true</selenide.fastSetValue>
+            <!--<selenide.browserSize>1920x1080</selenide.browserSize>-->
+          </systemPropertyVariables>
+          <trimStackTrace>false</trimStackTrace>
         </configuration>
         <dependencies>
           <dependency>
