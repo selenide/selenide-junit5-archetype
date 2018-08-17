@@ -47,7 +47,9 @@ With longer timeout for slow connections, default timeout is 4 seconds:
 ```mvn test -Dselenide.browser=chrome -Dselenide.timeout=8000```
 
 In IE or Edge (Windows only):
-```mvn test -Dselenide.browser=ie
+
+```
+mvn test -Dselenide.browser=ie
 mvn test -Dselenide.browser=edge
 ```
 
