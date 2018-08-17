@@ -6,21 +6,21 @@ Maven Archetype for a Selenide tests with JUnit 5
 
 ### generate a basic Selenide project
 
-```mvn archetype:generate -DarchertypeGroupId=org.selenide -DarchetypeArtefactId=selenide-junit5-archetype```
+```mvn archetype:generate -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype```
 
-then enter *groupId* (e.g. com.example), *artefactId* (e.g. ui-tests), *version* (default 1.0-SNAPSHOT), *package* (default the same as *groupId*. Confirm with **Y**.
+then enter *groupId* (e.g. com.example), *artifactId* (e.g. ui-tests), *version* (default 1.0-SNAPSHOT), *package* (default the same as *groupId*. Confirm with **Y**.
 
 Alternatively you can provide given parameters in the command line (**-B** - batch mode) :
 
-```mvn archetype:generate -B -DarchertypeGroupId=org.selenide -DarchetypeArtefactId=selenide-junit5-archetype -DgroupId=com.example -DartefactId=ui-tests```
+```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests```
 
 or with alternate package
 
-```mvn archetype:generate -B -DarchertypeGroupId=org.selenide -DarchetypeArtefactId=selenide-junit5-archetype -DgroupId=com.example -DartefactId=ui-tests -Dpackage=com.example.project.ui```
+```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests -Dpackage=com.example.project.ui```
 
 The archetype is not released as often as Selenide, you can use the newest version of selenide ![last version](https://img.shields.io/maven-central/v/com.codeborne/selenide.svg) when generating:
 
-```mvn archetype:generate -B -DarchertypeGroupId=org.selenide -DarchetypeArtefactId=selenide-junit5-archetype -DgroupId=com.example -DartefactId=ui-tests -Dselenide_version=4.13.0```
+```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests -Dselenide_version=4.13.0```
 
 ### Content of the project
 
