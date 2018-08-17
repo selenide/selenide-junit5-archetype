@@ -18,7 +18,7 @@ or with alternate package
 
 ```mvn archetype:generate -B -DarchertypeGroupId=org.selenide -DarchetypeArtefactId=selenide-junit5-archetype -DgroupId=com.example -DartefactId=ui-tests -Dpackage=com.example.project.ui```
 
-The archetype is not released as often as Selenide, you can you the newest version of selenide ![last version](https://img.shields.io/maven-central/v/com.codeborne/selenide.svg) when generating:
+The archetype is not released as often as Selenide, you can use the newest version of selenide ![last version](https://img.shields.io/maven-central/v/com.codeborne/selenide.svg) when generating:
 
 ```mvn archetype:generate -B -DarchertypeGroupId=org.selenide -DarchetypeArtefactId=selenide-junit5-archetype -DgroupId=com.example -DartefactId=ui-tests -Dselenide_version=4.13.0```
 
