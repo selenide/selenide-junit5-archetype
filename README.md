@@ -8,7 +8,7 @@ Maven Archetype for a Selenide tests with JUnit 5
 
 ```mvn archetype:generate -DarchertypeGroupId=org.selenide -DarchetypeArtefactId=selenide-junit5-archetype```
 
-then, enter *groupId* (e.g. com.example), *artefactId* (e.g. ui-tests), *version* (default 1.0-SNAPSHOT), *package* (default the same as *groupId*. Confirm with **Y**.
+then enter *groupId* (e.g. com.example), *artefactId* (e.g. ui-tests), *version* (default 1.0-SNAPSHOT), *package* (default the same as *groupId*. Confirm with **Y**.
 
 Alternatively you can provide given parameters in the command line (**-B** - batch mode) :
 
