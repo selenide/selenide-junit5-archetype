@@ -24,7 +24,7 @@ The archetype is not released as often as Selenide, you can use the newest versi
 
 ### Content of the project
 
-The project consists of one simple GoogleTest class, two PageObject/PageWidgets: GoogleSearch and SearchResults, and default configuration paramteres in pom.xml
+The project consists of one simple **GoogleTest** class, two PageObject/PageWidgets: **GoogleSearch** and **SearchResults**, and default configuration paramteres in **pom.xml**
 
 You can run the tests in Firefox (default)
 
