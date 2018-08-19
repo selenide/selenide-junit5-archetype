@@ -1,5 +1,5 @@
 # selenide-junit5-archetype
-Maven Archetype for a Selenide tests with JUnit 5
+Maven Archetype for Selenide tests with JUnit 5
 
 
 ## Usage
