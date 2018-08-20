@@ -40,7 +40,7 @@ In headless Chrome:
 
 In Chrome with different browser size:
 
-```mvn test -Dselenide.browser=chrome -DbrowserSize=1400x920```
+```mvn test -Dselenide.browser=chrome -Dselenide.browserSize=1400x920```
 
 With longer timeout for slow connections, default timeout is 4 seconds:
 
