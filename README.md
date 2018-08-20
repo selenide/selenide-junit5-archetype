@@ -26,13 +26,13 @@ The archetype is not released as often as Selenide, you can use the newest versi
 
 The project consists of one simple **GoogleTest** class, two PageObject/PageWidgets: **GoogleSearch** and **SearchResults**, and default configuration paramteres in **pom.xml**
 
-You can run the tests in Firefox (default)
+You can run the tests in Chrome (default)
 
 ```mvn test```
 
-In Chrome:
+In Firefox:
 
-```mvn test -Dselenide.browser=chrome```
+```mvn test -Dselenide.browser=firefox```
 
 In headless Chrome:
 
