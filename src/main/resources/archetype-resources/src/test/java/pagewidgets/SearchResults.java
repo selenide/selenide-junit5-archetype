@@ -1,19 +1,21 @@
 package ${package}.pagewidgets;
 
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.SelenideElement;
 
-import com.codeborne.selenide.*;
-
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class SearchResults {
 
-  // Elements
-  public ElementsCollection found = $$("#ires .g");
+  private ElementsCollection found = $$("#ires .g");
 
-  // Actions
-  public SelenideElement getResult(int index) {
-    return found.get(index);
+  public void verifyCount(int atLeast) {
+    found.shouldHave(sizeGreaterThan(atLeast));
   }
 
+  public SelenideElement verifyText(int index, String expectedText) {
+    return found.get(index).shouldHave(text(expectedText));
+  }
 }
