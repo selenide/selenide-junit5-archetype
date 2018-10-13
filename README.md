@@ -22,6 +22,13 @@ The archetype is not released as often as Selenide, you can use the newest versi
 
 ```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests -Dselenide_version=4.13.0```
 
+#### Windows Command Line
+
+In some cases you might need to put "" around text values to avoid failing builds on Windows. For example:
+
+```mvn archetype:generate -B -DarchetypeGroupId="org.selenide" -DarchetypeArtifactId="selenide-junit5-archetype" -DgroupId="com.example" -DartifactId="ui-tests" -Dselenide_version="4.13.0"```
+
+
 ### Content of the project
 
 The project consists of one simple **GoogleTest** class, two PageObject/PageWidgets: **GoogleSearch** and **SearchResults**, and default configuration paramteres in **pom.xml**
