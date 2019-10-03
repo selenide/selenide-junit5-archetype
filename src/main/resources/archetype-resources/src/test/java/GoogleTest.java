@@ -11,19 +11,17 @@ import static com.codeborne.selenide.Selenide.*;
 /**
  * Simple Selenide Test with PageObjects
  */
-public class GoogleTest
-
-{
+public class GoogleTest {
     @Test
     public void searchForSelenide() {
         // Arrange
         open("https://google.com/ncr");
+
         // Act
-        new GoogleSearch().searchFor("selenide");
+        SearchResults results = new GoogleSearch().searchFor("selenide");
 
         // Assert
-        SearchResults results = new SearchResults();
-        results.found.shouldHave(sizeGreaterThan(1));
-        results.getResult(0).shouldHave(text("Selenide: concise UI tests in Java"));
+        results.verifyCount(1);
+        results.verifyText(0, "Selenide: concise UI tests in Java");
     }
 }
