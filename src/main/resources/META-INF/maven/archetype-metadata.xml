@@ -3,7 +3,7 @@
                       name="selenide junit5 archetype">
   <requiredProperties>
     <requiredProperty key="selenide_version">
-      <defaultValue>4.14.2</defaultValue>
+      <defaultValue>5.15.1</defaultValue>
       <validationRegex>\d+.\d+(\.\d+)?</validationRegex>
     </requiredProperty>
   </requiredProperties>

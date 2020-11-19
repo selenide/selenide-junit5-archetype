@@ -6,32 +6,52 @@ Maven Archetype for Selenide tests with JUnit 5
 
 ### generate a basic Selenide project
 
-```mvn archetype:generate -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype```
+```
+mvn archetype:generate -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype
+```
 
 then enter *groupId* (e.g. com.example), *artifactId* (e.g. ui-tests), *version* (default 1.0-SNAPSHOT), *package* (default the same as *groupId*. Confirm with **Y**.
 
 Alternatively you can provide given parameters in the command line (**-B** - batch mode) :
 
-```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests```
+```
+mvn archetype:generate -B \
+  -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype \
+  -DgroupId=com.example \
+  -DartifactId=ui-tests
+```
 
 or with alternate package
 
-```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests -Dpackage=com.example.project.ui```
+```
+mvn archetype:generate -B \
+  -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype \
+  -DgroupId=com.example \
+  -DartifactId=ui-tests \
+  -Dpackage=com.example.project.ui
+```
 
 The archetype is not released as often as Selenide, you can use the newest version of Selenide ![last version](https://img.shields.io/maven-central/v/com.codeborne/selenide.svg) when generating:
 
-```mvn archetype:generate -B -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype -DgroupId=com.example -DartifactId=ui-tests -Dselenide_version=4.13.0```
+```
+mvn archetype:generate -B \
+  -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype \
+  -DgroupId=com.example -DartifactId=ui-tests \
+  -Dselenide_version=5.15.1
+```
 
 #### Windows Command Line
 
 In some cases you might need to put "" around text values to avoid failing builds on Windows. For example:
 
-```mvn archetype:generate -B -DarchetypeGroupId="org.selenide" -DarchetypeArtifactId="selenide-junit5-archetype" -DgroupId="com.example" -DartifactId="ui-tests" -Dselenide_version="4.13.0"```
+```
+mvn archetype:generate -B -DarchetypeGroupId="org.selenide" -DarchetypeArtifactId="selenide-junit5-archetype" -DgroupId="com.example" -DartifactId="ui-tests" -Dselenide_version="5.15.1"
+```
 
 
 ### Content of the project
 
-The project consists of one simple **GoogleTest** class, two PageObject/PageWidgets: **GoogleSearch** and **SearchResults**, and default configuration paramteres in **pom.xml**
+The project consists of one simple **GoogleTest** class, two PageObject/PageWidgets: **GoogleSearch** and **SearchResults**, and default configuration parameters in **pom.xml**
 
 You can run the tests in Chrome (default)
 
@@ -64,12 +84,12 @@ In Safari (Mac OS only, enable *Allow remote connections* option in Safari Devel
 
 ```mvn test -Dselenide.browser=safari```
 
-## Developers/Contributers
+## Developers/Contributors
 
 To build and install locally 
 
 ```mvn install```
 
-To deploy to Maven Central (only authorized contributers, requires GPG certificate and **settings.xml** configuration)
+To deploy to Maven Central (only authorized contributors, requires GPG certificate and **settings.xml** configuration)
 
 ```mvn deploy```
