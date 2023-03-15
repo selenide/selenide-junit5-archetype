@@ -4,15 +4,15 @@
   <groupId>org.selenide</groupId>
   <artifactId>selenide-junit5-archetype</artifactId>
   <packaging>maven-archetype</packaging>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <name>Selenide JUnit5 simple example project</name>
-  <description>This archetype generates a sample Selenide (http://selenide.org) project</description>
+  <description>This archetype generates a sample Selenide (https://selenide.org) project</description>
   <url>https://github.com/selenide/selenide-junit5-archetype</url>
 
   <licenses>
     <license>
       <name>MIT License</name>
-      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <url>https://opensource.org/license/mit/</url>
     </license>
   </licenses>
 
@@ -30,7 +30,7 @@
   <scm>
     <connection>scm:git:git://github.com/selenide/selenide-junit5-archetype</connection>
     <developerConnection>scm:git:ssh://github.com:selenide/selenide-junit5-archetype.git</developerConnection>
-    <url>http://github.com/selenide/selenide-junit5-archetype/tree/master</url>
+    <url>https://github.com/selenide/selenide-junit5-archetype/tree/master</url>
   </scm>
 
   <distributionManagement>

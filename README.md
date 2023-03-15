@@ -37,7 +37,7 @@ The archetype is not released as often as Selenide, you can use the newest versi
 mvn archetype:generate -B \
   -DarchetypeGroupId=org.selenide -DarchetypeArtifactId=selenide-junit5-archetype \
   -DgroupId=com.example -DartifactId=ui-tests \
-  -Dselenide_version=5.15.1
+  -Dselenide_version=6.12.3
 ```
 
 #### Windows Command Line
@@ -45,7 +45,7 @@ mvn archetype:generate -B \
 In some cases you might need to put "" around text values to avoid failing builds on Windows. For example:
 
 ```
-mvn archetype:generate -B -DarchetypeGroupId="org.selenide" -DarchetypeArtifactId="selenide-junit5-archetype" -DgroupId="com.example" -DartifactId="ui-tests" -Dselenide_version="5.15.1"
+mvn archetype:generate -B -DarchetypeGroupId="org.selenide" -DarchetypeArtifactId="selenide-junit5-archetype" -DgroupId="com.example" -DartifactId="ui-tests" -Dselenide_version="6.12.3"
 ```
 
 
